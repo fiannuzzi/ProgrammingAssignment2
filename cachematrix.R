@@ -2,6 +2,9 @@
 ## functions do
 
 ## Write a short comment describing this function
+## The function, once given a matrix in input, creates a list of four subfunctions.
+## These subfunctions return the matrix itself, its inverse (if available) 
+## or can be used to set the matrix value and its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
   
@@ -30,6 +33,12 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+## The function takes a matrix of the form returned by the above function in input 
+## and returns its inverse. 
+## The inverse is either read in from the matrix object via the get_inverse() subfunction
+## or evaluated from scratch. 
+## In the latter case, the result is stored in the matrix object via the set_inverse() 
+## subfunction.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
